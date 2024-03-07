@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family:'Poppines',sans-serif;
+}
+
+body{
+    background-color: #001e4d;
+}
+.container .application{
+    background-color: #fff;
+    max-width: 750px;
+    min-width: 500px;
+    min-height: 15vh;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.container .application  h1::before{
+    
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #001e4d;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}.container .application .question{
+    margin: 0.5rem;
+}
+.container .application .button {
+    margin: 0.5rem 0;
+    border: 2px solid #062b67;
+    transition: 0.2s;
+}
+.container .application .button.pass,.container .application .button.pass:hover{
+    background-color: lightgreen;
+    color: #001a2a;
+}
+.container .application .button.fail,.container .application .button.fail:hover{
+    background-color:rgb(250, 168, 154);
+    color: #001a2a;
+}
+.container .application .button.disable{
+    cursor: not-allowed;
+}
+.container .application .button:hover{
+    background-color: #222;
+    color: #fff;
+}
+.container .application .button.no-hover{
+    background-color: #fff;
+    color: #062b67;
+}
+.container .application div button{
+    width: 7rem;
+    background: #001a2a;
+    color: white;
+}
+.container .application div button.disable{
+    display: none;
+}
